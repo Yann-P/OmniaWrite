@@ -25,15 +25,6 @@ module.exports = {
         "ecmaVersion": 2020,
         "sourceType": "module"
     },
-    "rules": {
-        "quotes": [
-            2,
-            "double",
-            {
-                "avoidEscape": true
-            }
-        ]
-    },
     "settings": {
         "svelte3/ignore-styles": () => true
     }

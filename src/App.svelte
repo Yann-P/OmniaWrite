@@ -32,6 +32,7 @@
   import ThirdPartyRoute from "./shared/ThirdParty.svelte";
   import DisclaimerRoute from "./shared/Disclaimer.svelte";
   import PolicyRoute from "./routes/Cloud/Policy.svelte";
+  import { get } from "svelte/store";
 
   locale.set($settings.language);
 
@@ -228,7 +229,7 @@
     <div class="content" class:focus={$ui.focus}>
       <Toast
         bind:show={updateAvailable}
-        text={$_("common.update-toast")}
+        text={$_('common.update-toast')}
         on:click={updateApp}
         duration="forever" />
       <div class="inner">
